@@ -13,7 +13,6 @@ HERO SECTION
   background-position:center;
   background-size: cover;
   padding: 2rem;
-
 }
 
 .coverCard{
@@ -35,7 +34,7 @@ HERO SECTION
 
   color: var(--on-primary);
   text-align: center;
-  width: 30%;
+  width: 35%;
 }
 
 .coverInfoDetails{
@@ -51,7 +50,7 @@ HERO SECTION
   background-image: url(/img/ramona-stefano-col.jpg);
   background-position: center;
   background-size: cover;
-  width: 70%;
+  width: 65%;
   min-height:70vh;
 }
 
