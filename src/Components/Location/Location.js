@@ -46,8 +46,8 @@ const Location = () => {
          
           <div className={styles.info}>
             <h3><b>Il ricevimento</b></h3>
-            <p><b>Galbusera Nera - h 14.30</b></p>
-            <p>Via Galbusera Nera, 23888 <br/>
+            <p><b>Galbusera Nera</b></p>
+            <p><b>h 14.30</b><br /> Via Galbusera Nera, 23888 <br/>
             La Valletta Brianza - Lecco<br />
             </p>
             <a className="button" href='https://maps.app.goo.gl/Vv8EyhzBuNKFeZ4k6' target="_blank">Apri la mappa</a>
