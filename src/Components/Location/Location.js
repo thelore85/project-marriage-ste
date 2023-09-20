@@ -5,54 +5,59 @@ const Location = () => {
   return(
     
     
-    <section id="where" className={styles.where} >
-    <div>
+    <section id="where" className={styles.whereSection} >
 
-      <h2>Dove ti aspettiamo</h2>
-      <div className='divider'></div>
+      <div className={styles.sectionTitle}>
+        <h2>Dove ti aspettiamo</h2>
+        <div className='divider'></div>
+      </div>
+      
+      <div className={styles.title}>
+        <h3> Il programma della giornata</h3>
+      </div>
 
-      <div className="wrapper">
+      
 
-        <div className={styles.locationCard}>
-          <h3> Il ricevimento</h3>
+      <div className={styles.cardWrapper}>
 
-          <div className={styles.infoWrapper}>
-            <div>
-              <p><b>Ristorante Galbusera Nera</b></p>
-              <p>In via madreperla, 4 <br />
-              Castigliano Monzano - Como<br />
-              Ore 10.00</p>
-              <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
-            </div>
-            <div className={styles.locationImg}></div>
-           
-          </div>
-
-          <img className={styles.mapImage} src="/img/ric-map.png" alt='map'></img>
+        <div cassName={styles.imageHeader}>
+          <div className={styles.headerImg}></div>
+          <div className={styles.headerImg}></div>    
         </div>
 
-        <div className="location ricevimento">
-          <h3>La cerimonia</h3>
-
-          <div className={styles.infoWrapper}>
-            <div>
-              <p><b>Chiesa S. Giovanni</b></p>
-              <p>In via madreperla, 4 <br />
-              Castigliano Monzano - Como<br />
-              Ore 10.00</p>
-              <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
-            </div>
-            <div className={styles.locationImg}></div>
-           
+        <div className={styles.infoCard}>
+          <div className={styles.info}>
+            <h3><b>La Cerimonia</b></h3>
+            <p><b>Chiesa San Giuseppe - h 10.00</b></p>
+            <p>In via madreperla, 4 <br />
+            Castigliano Monzano - Como<br />
+            </p>
+            <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
           </div>
 
-          <img className={styles.mapImage} src="/img/ric-map.png" alt='map'></img>
+          <div className={styles.locationImg}></div>    
         </div>
 
+        <div class='divider'></div>
+
+        <div className={styles.infoCard}>
+          <div className={styles.locationImg}></div>    
+         
+          <div className={styles.info}>
+            <h3><b>Il ricevimento</b></h3>
+            <p><b>Palazzo Madre - h 14.30</b></p>
+            <p>In via madreperla, 4 <br/>
+            Castigliano Monzano - Como<br />
+            </p>
+            <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
+          </div>
+
+        </div>
+
+        
 
       </div>
 
-    </div>
     </section>
 
 

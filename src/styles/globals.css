@@ -2,7 +2,9 @@
 
 :root {
   --primary:  rgba(245, 238, 185, 0.664);
-  --secondary:  rgb(112, 62, 136);
+  --secondary:  #d5f3dd;
+  --terciary:  hwb(203 82% 4%);
+  --quart:  #d0527c;
   --black: black;
   --white: white;
 
@@ -101,7 +103,8 @@ h3,h4,h5{
 .divider{
   border-top: solid 1px;
   border-color: var(--on-primary);
-  width: 40%;
+  width: 30%;
+  max-width: 200px;
   margin: auto;
   display: block;
   margin-bottom: 2rem;

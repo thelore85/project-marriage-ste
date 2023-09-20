@@ -19,12 +19,11 @@ HERO SECTION
 .coverCard{
   display: flex;
   align-items: center;
-  background: var(--primary);
+  background: var(--terciary);
   width: 100%;
   max-width: 1000px;
   border: solid 1rem;
   border-color: white;
-
 }
 
 
