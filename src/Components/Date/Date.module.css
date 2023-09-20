@@ -1,0 +1,64 @@
+
+
+
+/* ///////////////////////
+WHEN SECTION
+//////////////////// */
+
+
+.when{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: var(--primary);
+  color: var(--on-primary);
+  text-align: center;
+  padding: 4rem 2rem;
+  border: solid 2rem white;
+}
+
+.date{
+  margin: auto;
+  padding: 3rem;
+  border: solid 0.8rem;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.357);
+}
+
+.date > * {
+  font-size: 3.5rem;
+}
+
+.aforismo{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top:-1.8rem;
+  height:3rem;
+  width: auto;
+  max-width: 70%;
+  background: white;
+  margin: auto;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.aforismo p{
+  line-height:0.9rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* //////// mobile ///////// */
+@media only screen and (max-width: 650px) {
+  .date{
+    padding: 3rem 1rem;
+  }
+  .date > * {
+    font-size: 2.7rem;
+  }
+}

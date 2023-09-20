@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Cover from '@/Components/Cover/Cover.js'
+import Date from '@/Components/Date/Date.js'
+import Location from '@/Components/Location/Location.js'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -14,106 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main id="hero" className={`${styles.main} ${inter.className}`}>
-        <div className={styles.coverCard}>
-
-          <div className={styles.coverImage}>
-            <div>
-              <h1 className={styles.title}> ramona & stefano</h1>
-              <h3> finalmente sposi</h3>
-              <p>Unisciti a noi nel giorno più speciale della nostra vita.</p>
-            </div>
-          </div>
-
-          <div className={styles.coverInfo}>
-
-            <h3> Sei invitato al nostro matrimonio!</h3>
-            <div className='divider'></div>
-          
-            <div className={styles.coverInfoDetails}>           
-              <p> 14 settembre 2024<br />
-                  Milano - Trenno<br />
-                  Piazza S. Giovanni, 4, 20151<br />
-                  Parrocchia S. Giovanni Battista</p>
-            </div>
-
-            <a href="#" className='button'>conferma la presenza</a>
-          </div>
-
-        </div>
-      </main>
-
-      <section id="when" className={styles.when}>
-        <div>
-          <h2> Non puoi mancare</h2>
-          <div className='divider'></div>
-
-          <h5>Segnati la data</h5>
-          <div className={styles.date}>
-            <h3>14-9-2024</h3>
-          </div>
-
-          <div className={styles.aforismo}>
-            <p>"La vita non avrebbe senso senza l’amore che ci unisce."</p>
-          </div>
-
-          <a className="button">Scopri Come Raggiungerci</a>
-
-        </div>
-      </section>
-
-
-
-      <section id="where" className={styles.where} >
-      <div>
-
-        <h2>Dove ti aspettiamo</h2>
-        <div className='divider'></div>
-
-        <div className="wrapper">
-
-          <div className={styles.locationCard}>
-            <h3> Il ricevimento</h3>
-
-            <div className={styles.infoWrapper}>
-              <div>
-                <p><b>Ristorante Galbusera Nera</b></p>
-                <p>In via madreperla, 4 <br />
-                Castigliano Monzano - Como<br />
-                Ore 10.00</p>
-                <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
-              </div>
-              <div className={styles.locationImg}></div>
-             
-            </div>
-
-            <img className={styles.mapImage} src="/img/ric-map.png" alt='map'></img>
-          </div>
-
-          <div className="location ricevimento">
-            <h3>La cerimonia</h3>
-
-            <div className={styles.infoWrapper}>
-              <div>
-                <p><b>Chiesa S. Giovanni</b></p>
-                <p>In via madreperla, 4 <br />
-                Castigliano Monzano - Como<br />
-                Ore 10.00</p>
-                <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
-              </div>
-              <div className={styles.locationImg}></div>
-             
-            </div>
-
-            <img className={styles.mapImage} src="/img/ric-map.png" alt='map'></img>
-          </div>
-
-
-        </div>
-
-      </div>
-      </section>
-
+      <Cover />
+      <Date />
+      <Location />
 
 
     </>
