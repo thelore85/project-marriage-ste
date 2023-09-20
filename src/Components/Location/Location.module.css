@@ -71,17 +71,17 @@ where
 
   .headerImgRic{
     display: inline-block;
-    height: 100px;
+    height: 160px;
     background-image: url("/img/ric-loc.png");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     /* border-radius: 8px; */
     width: 50%;
   }
 
   .headerImgChiesa{
     display: inline-block;
-    height: 100px;
+    height: 160px;
     background-image: url("/img/chiesa-loc.png");
     background-size: cover;
     background-position: center;
