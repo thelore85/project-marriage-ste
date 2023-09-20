@@ -20,36 +20,37 @@ const Location = () => {
 
       <div className={styles.cardWrapper}>
 
-        <div cassName={styles.imageHeader}>
-          <div className={styles.headerImg}></div>
-          <div className={styles.headerImg}></div>    
+        <div className={styles.imageHeader}>
+          <div className={styles.headerImgRic}></div>
+          <div className={styles.headerImgChiesa}></div>    
         </div>
 
         <div className={styles.infoCard}>
           <div className={styles.info}>
             <h3><b>La Cerimonia</b></h3>
-            <p><b>Chiesa San Giuseppe - h 10.00</b></p>
-            <p>In via madreperla, 4 <br />
-            Castigliano Monzano - Como<br />
+            <p><b>Parrocchia S. Giovanni Battista</b></p>
+            <p><b>Ore 10.00</b><br />
+            Piazza S. Giovanni, 4 <br />
+            20151 Milano - MI<br />
             </p>
-            <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
+            <a className="button" href='https://maps.app.goo.gl/o3do7YqHVkbvF1M19' target="_blank">Apri la mappa</a>
           </div>
 
-          <div className={styles.locationImg}></div>    
+          <div className={styles.locationImgChiesa}></div>    
         </div>
 
-        <div class='divider'></div>
+        <div className='divider'></div>
 
         <div className={styles.infoCard}>
-          <div className={styles.locationImg}></div>    
+          <div className={styles.locationImgRic}></div>    
          
           <div className={styles.info}>
             <h3><b>Il ricevimento</b></h3>
-            <p><b>Palazzo Madre - h 14.30</b></p>
-            <p>In via madreperla, 4 <br/>
-            Castigliano Monzano - Como<br />
+            <p><b>Galbusera Nera - h 14.30</b></p>
+            <p>Via Galbusera Nera, 23888 <br/>
+            La Valletta Brianza - Lecco<br />
             </p>
-            <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
+            <a className="button" href='https://maps.app.goo.gl/Vv8EyhzBuNKFeZ4k6' target="_blank">Apri la mappa</a>
           </div>
 
         </div>
