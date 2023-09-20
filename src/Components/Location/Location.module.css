@@ -8,14 +8,16 @@ where
   background-color: var(--white);
   color: var(--on-primary);
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 2rem;
+  margin: auto;
 }
 
 .cardWrapper{
   border: solid 1rem;
   border-color: var(--secondary);
-  width: 90%;
   margin: auto;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .infoCard{
