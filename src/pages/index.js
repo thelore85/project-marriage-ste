@@ -61,28 +61,58 @@ export default function Home() {
 
         </div>
       </section>
-{/* 
-      <section id="where">
-        <div className="location ricevimento">
-          <h2> una location speciale</h2>
-          <div>
-            <h3>Il ricevimento</h3>
-            <p>In via madreperla, 4 </p>
-            <p>Castigliano Monzano - Como</p>
-            <p>Ore 10.00</p>
+
+
+
+      <section id="where" className={styles.where} >
+      <div>
+
+        <h2>Dove ti aspettiamo</h2>
+        <div className='divider'></div>
+
+        <div className="wrapper">
+
+          <div className={styles.locationCard}>
+            <h3> Il ricevimento</h3>
+
+            <div className={styles.infoWrapper}>
+              <div>
+                <p><b>Ristorante Galbusera Nera</b></p>
+                <p>In via madreperla, 4 <br />
+                Castigliano Monzano - Como<br />
+                Ore 10.00</p>
+                <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
+              </div>
+              <div className={styles.locationImg}></div>
+             
+            </div>
+
+            <img className={styles.mapImage} src="/img/ric-map.png" alt='map'></img>
           </div>
+
+          <div className="location ricevimento">
+            <h3>La cerimonia</h3>
+
+            <div className={styles.infoWrapper}>
+              <div>
+                <p><b>Chiesa S. Giovanni</b></p>
+                <p>In via madreperla, 4 <br />
+                Castigliano Monzano - Como<br />
+                Ore 10.00</p>
+                <a className="button" href='https://maps.app.goo.gl/QYnQEibZwgoLmagK9' target="_blank">Apri la mappa</a>
+              </div>
+              <div className={styles.locationImg}></div>
+             
+            </div>
+
+            <img className={styles.mapImage} src="/img/ric-map.png" alt='map'></img>
+          </div>
+
+
         </div>
 
-        <div className="location cerimonia">
-          <h2> La cerimonia - chiesa san guglielmo</h2>
-          <div>
-            <h3>La chiesa di san guglielmo</h3>
-            <p>In via santa croce, 33</p>
-            <p>Castigliano Monzano - Como</p>
-            <p>Ore 14.30</p>
-          </div>
-        </div>
-      </section> */}
+      </div>
+      </section>
 
 
 

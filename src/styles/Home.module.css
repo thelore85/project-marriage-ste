@@ -147,3 +147,94 @@ WHEN SECTION
   }
 }
 
+
+/* //////////////// 
+where  
+/////////////////////*/
+
+.where{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: var(--white);
+  color: var(--on-primary);
+  text-align: center;
+  padding: 4rem 2rem;
+  border: solid 2rem white;
+}
+
+.locationCard{
+  display: block;
+  margin-bottom: 4rem;
+  border: solid 0.1px
+}
+
+.infoWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--on-primary);
+  border: solid 1rem;
+  border-color: var(--primary);
+  text-align: left;
+  width: 90%;
+  height: 100%;
+}
+
+.infoWrapper > div{
+  padding: 1rem;
+}
+
+/* //images */
+.locationImg{
+  min-height: 250px;
+  height: 100%;
+  background-image: url("/img/ric-loc.png");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+.mapImage{
+  position: relative;
+  z-index: 1;
+  display: block;
+  float: right;
+  margin-top: -7rem;
+  width: 35%;
+  border-radius: 20px;
+}
+
+
+/* //////// mobile ///////// */
+@media only screen and (max-width: 750px) {
+
+  .infoWrapper{
+    display: block;
+    width: 100%;
+  }
+
+  .infoWrapper > div{
+    display: block;
+    width: 100%;
+  }
+
+  .locationImg{
+    display: block;
+    width: 100%
+
+  }
+
+
+  .mapImage{
+    position: relative;
+    z-index: 1;
+    display: none;
+    float:none;
+    margin-top: 0rem;
+    width: 100%;
+    border-radius: 20px;
+    margin: 2rem auto;
+  }
+}
