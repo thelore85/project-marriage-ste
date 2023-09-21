@@ -17,16 +17,24 @@
 
 .containerMessages{
   min-height: 400px;
-  max-height: 80vh; 
+  height: 60vh;
   width:100%;
   max-width: 400px;
   margin: auto;
   border-radius: 20px;
-  background-color: white;
   padding: 1rem;
-  overflow: scroll;
+  overflow-y: scroll;
   border: solid white 1rem;
+  background: white;
+
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
+
+.containerMessages::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
 
 .containerMessages li{
   text-align: left;
@@ -67,6 +75,7 @@
   height: 40px;
   border: none;
   border-radius: 10px 0px 0px 10px;
+  background-color: white;
 }
 
 .icon{ 

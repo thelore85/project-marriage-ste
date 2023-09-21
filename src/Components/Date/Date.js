@@ -13,7 +13,7 @@ const Date = () => {
       <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
       <div className='divider'></div>
 
-      <h5>Segnati la data</h5>
+      <h5>Segna la data</h5>
       <div className={styles.date}>
         <h3>14-9-2024</h3>
       </div>
