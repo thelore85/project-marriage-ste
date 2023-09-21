@@ -18,7 +18,7 @@ const Contact = () => {
             <label htmlFor="country">Accompagnatori</label>
             <input type="number" id="accompagnatori" name="accompagnatori" className={styles.inputField} placeholder="Con quante persone verrari? (numero)" min="0" max="10" />
             <label htmlFor="fname">Contatti</label>
-            <input type="tel" id="lname" name="lastname" className={styles.inputField} placeholder="Numero ci cellulare" />
+            <input type="tel" id="lname" name="lastname" className={styles.inputField} placeholder="Numero di cellulare" />
             <input type="email" id="lname" name="lastname" className={styles.inputField} placeholder="email" />
             <p>Useremo il tuo contatto solo in caso di comunicazioni importanti relative al programma dell'evento.</p>
 
