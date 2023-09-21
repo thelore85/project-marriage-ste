@@ -13,8 +13,8 @@ const Contact = () => {
           <form action="/action_page.php">
             <label htmlFor="fname">Nome</label>
             <input type="text" id="fname" name="firstname" className={styles.inputField} placeholder="Inserisci il tuo nome" />
-            <label htmlFor="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" className={styles.inputField} placeholder="Inseriscli il tuo cognome" />
+            <label htmlFor="lname">Cognome</label>
+            <input type="text" id="lname" name="lastname" className={styles.inputField} placeholder="Inserisci il tuo cognome" />
             <label htmlFor="country">Accompagnatori</label>
             <input type="number" id="accompagnatori" name="accompagnatori" className={styles.inputField} placeholder="Con quante persone verrari? (numero)" min="0" max="10" />
             <label htmlFor="fname">Contatti</label>
