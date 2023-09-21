@@ -17,6 +17,7 @@ WHEN SECTION
   border: solid 2rem white;
 }
 
+
 .date{
   margin: auto;
   padding: 3rem;
@@ -28,6 +29,8 @@ WHEN SECTION
 .date > * {
   font-size: 3.5rem;
 }
+
+
 
 .aforismo{
   display: flex;

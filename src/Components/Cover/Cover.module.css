@@ -40,6 +40,10 @@ HERO SECTION
   border-color: white;
 }
 
+.logo{
+  display: inline-block;
+  margin-right: 7px;
+}
 
 .coverInfo {
   padding: 2rem 1rem;

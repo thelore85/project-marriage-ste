@@ -15,7 +15,6 @@ export default function Home() {
         <meta name="description" content="Sei invitato al nostro matrimonio a Milano. Ti aspettiamo il 14 settembre 2024 " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/7efa7486da.js" crossorigin="anonymous"></script>
       </Head>
 
       <Cover />

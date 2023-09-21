@@ -8,6 +8,10 @@ const Contact = () => {
         <div>
           <h1>Conferma la tua presenza</h1>
           <div className='divider-white'></div>
+          <img className="logo" src="img/ramona-stefano-white.png" height='20px'/>
+          <div className='divider-white'></div>
+
+   
         </div>
         <div className={styles.formContainer}>
           <form action="/action_page.php">

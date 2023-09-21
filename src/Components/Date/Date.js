@@ -10,6 +10,8 @@ const Date = () => {
     <div>
       <h2> Non puoi mancare</h2>
       <div className='divider'></div>
+      <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
+      <div className='divider'></div>
 
       <h5>Segnati la data</h5>
       <div className={styles.date}>

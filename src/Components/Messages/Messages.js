@@ -63,7 +63,7 @@ const Messages = () => {
             placeholder="Scrivi il tuo messaggio..."
           />
           <div className={styles.icon} onClick={handleSendMessage}>
-            <i className="fa-solid fa-share"></i>
+            <span>{'>'}</span>
           </div>
         </div>
       </div>

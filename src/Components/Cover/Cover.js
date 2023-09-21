@@ -12,7 +12,10 @@ const Cover = () => {
       <div className={styles.coverImage}>
         <div>
           <h1 className={styles.title}> ramona & stefano</h1>
-          <h3> finalmente sposi</h3>
+          <h3>
+          <img className={styles.logo} src="img/ramona-stefano-white.png" height='20px'/>
+          finalmente sposi
+          </h3>
           <p>Unisciti a noi nel giorno più speciale della nostra vita.</p>
         </div>
       </div>

@@ -10,6 +10,8 @@ const Location = () => {
       <div className={styles.sectionTitle}>
         <h2>Dove ti aspettiamo</h2>
         <div className='divider'></div>
+        <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
+        <div className='divider'></div>
       </div>
       
       <div className={styles.title}>

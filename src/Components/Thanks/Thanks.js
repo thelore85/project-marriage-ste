@@ -8,7 +8,9 @@ const Thanks = () => {
 
         <div className={styles.title}>
           <h1>Ti aspettiamo</h1>
-          <div className="divider"></div>
+          <div className='divider'></div>
+          <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
+          <div className='divider'></div>
         </div>
 
         <div className={styles.firma}>
