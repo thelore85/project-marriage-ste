@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Cover from '@/Components/Cover/Cover.js'
 import Date from '@/Components/Date/Date.js'
 import Location from '@/Components/Location/Location.js'
+import Contact from '@/Components/Contact/Contact.js'
+import Thanks from '@/Components/Thanks/Thanks.js'
 
 
 
@@ -18,8 +20,8 @@ export default function Home() {
       <Cover />
       <Date />
       <Location />
-
-
+      <Contact />
+      <Thanks />
     </>
   )
 }

@@ -5,7 +5,7 @@ const Location = () => {
   return(
     
     
-    <section id="where" className={styles.whereSection} >
+    <section id="location" className={styles.whereSection} >
 
       <div className={styles.sectionTitle}>
         <h2>Dove ti aspettiamo</h2>

@@ -8,12 +8,12 @@ where
   background-color: var(--white);
   color: var(--on-primary);
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
   margin: auto;
 }
 
 .cardWrapper{
-  border: solid 1rem;
+  border: solid 3rem;
   border-color: var(--secondary);
   margin: auto;
   width: 100%;
@@ -93,4 +93,10 @@ where
   .locationImgChiesa{ display: none; }
 
   .info{ width: 100%; }
+
+
+  .cardWrapper{
+    border: solid 1.5rem;
+    border-color: var(--secondary);
+  }
 }

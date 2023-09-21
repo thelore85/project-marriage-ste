@@ -20,7 +20,7 @@ const Date = () => {
         <p>"La vita non avrebbe senso senza l’amore che ci unisce."</p>
       </div>
 
-      <a className="button">Scopri Come Raggiungerci</a>
+      <a className="button" href='#location'>Scopri Come Raggiungerci</a>
 
     </div>
   </section>

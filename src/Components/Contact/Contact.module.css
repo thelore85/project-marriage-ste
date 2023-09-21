@@ -1,0 +1,60 @@
+/* Contact.module.css */
+/* Stili per il div */
+
+.contact{
+  background-color: var(--quart);
+  color: var(--white);
+  font-family: 'Poppins';
+}
+.wrapper {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.formContainer{
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding: 2rem;
+  border: solid white 0.7rem;
+}
+
+.formContainer p{
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.formButton{
+  margin-top: 2rem;
+}
+
+/* Stili per input[type=text] e select */
+.inputField {
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Stili per input[type=submit] */
+.inputSubmit {
+
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputSubmit:hover {
+  background-color: #45a049;
+}
+

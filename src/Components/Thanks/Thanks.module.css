@@ -1,0 +1,50 @@
+/* Stili per l'elemento con l'immagine di sfondo */
+.thanks {
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  align-items: center;
+
+
+  padding: 2rem 2rem;
+  background-image: url("/img/flower-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  color: var(--on-primary)
+}
+
+/* Aggiungi uno pseudo-elemento ::before */
+.thanks::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)); /* Gradiente bianco con opacità */
+  z-index: -1; /* Porta l'immagine di sfondo al di sotto del contenuto */
+}
+
+
+.wrapper{
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+.firma h2{
+  font-size: 6rem;
+  line-height: 5rem;
+}
+
+
+/* //////// mobile ///////// */
+@media only screen and (max-width: 750px) {
+  .firma h2{
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+}

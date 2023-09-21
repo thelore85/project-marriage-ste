@@ -29,7 +29,7 @@ const Cover = () => {
               Parrocchia S. Giovanni Battista</p>
         </div>
 
-        <a href="#" className='button'>conferma la presenza</a>
+        <a href="#contact" className='button'>conferma la presenza</a>
       </div>
 
     </div>
