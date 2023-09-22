@@ -43,15 +43,10 @@ const Contact = ({ serverUrl }) => {
   }
 
 
-
   const showEmailConfirmationPopUp = (status) => { 
-
     if(status === true){ setEmailStatus(true)}
     else{ setEmailStatus(false)}    
   }
-  
-  
-  console.log('status email', emailStatus)
 
 
 // const showEmailConfirmationPopUp = (status = 'pending') => {
@@ -87,11 +82,7 @@ const Contact = ({ serverUrl }) => {
   .then(message => {
     console.log('Email delivery: ', message)
   })
-
-
 }
-
-
 
   return (
     <section id='contact' className={styles.contact}>
@@ -111,14 +102,14 @@ const Contact = ({ serverUrl }) => {
             <label htmlFor="lname">Cognome</label>
             <input type="text" id="lname" name="lastname" className={styles.inputField} placeholder="Inserisci il tuo cognome" onChange={ handleFormLastName } />
             <label htmlFor="country">Accompagnatori</label>
-            <input type="number" id="accompagnatori" name="accompagnatori" className={styles.inputField} placeholder="Con quante persone verrari? (numero)" value={0} min="0" max="10" onChange={handleGuest} />
+            <input type="number" id="accompagnatori" name="accompagnatori" className={styles.inputField} placeholder="Con quante persone verrari? (numero)" min="0" max="10" onChange={handleGuest} />
             <label htmlFor="fname">Cellulare</label>
             <input type="tel" id="lname" name="lastname" className={styles.inputField} placeholder="Numero di cellulare" onChange={handlePhone}/>
             <label htmlFor="fname">Email</label>
             <input type="email" id="lname" name="lastname" className={styles.inputField} placeholder="email" onChange={handleEmail}/>
             <p>Useremo il tuo contatto solo in caso di comunicazioni importanti relative al programma dell'evento.</p>
 
-            <a href="#contact" className='button-white' onClick={emailSending} >invia conferma</a>
+            <a className='button-white' onClick={emailSending} >invia conferma</a>
           </form>
         </div>
 
@@ -128,8 +119,7 @@ const Contact = ({ serverUrl }) => {
         </div>
       
         {
-          emailStatus === 'pending' ? null : (
-            emailStatus ? (
+          emailStatus === 'pending' ? null : ( emailStatus ? (
               <div className={styles.badgeOk}>
                 <p>Grazie per aver confermato! <br />
                 Ti aspettiamo alla nostra cerimonia</p>
@@ -139,14 +129,8 @@ const Contact = ({ serverUrl }) => {
                 <p>Invio email fallito! <br />
                 tutti i campi sono obbligatori</p>
               </div>
-            )
-          )
+            ))
         }
-
-
-
-
-
 
       </div>
     </section>
