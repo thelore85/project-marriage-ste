@@ -29,6 +29,11 @@ const Contact = () => {
             <input type="submit" value="Conferma" className={`button-white ${styles.formButton}`}/>
           </form>
         </div>
+
+        <div className={styles.mail}>
+          <p>Hai bisogno di maggiori dettagli o informazioni? scrivi una mail a <a href="mailto:ramona.stefano.sposi@gmail.com">ramona.stefano.sposi@gmail.com</a></p>
+        </div>
+
       </div>
     </section>
   )
