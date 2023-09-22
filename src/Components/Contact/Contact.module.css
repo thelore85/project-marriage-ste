@@ -57,3 +57,38 @@
 .mail p{
   font-size: 0.8rem;
 }
+
+.badgeOk{
+  padding: 1rem;
+  background-color: rgb(192, 249, 163);
+  border-radius: 30px;
+  max-width: 400px;
+  width: auto;
+  margin: auto;
+}
+
+.badgeOk p{
+  margin-bottom: 0rem;
+  color: rgb(46, 40, 32);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.badgeKo{
+  padding: 1rem;
+  background-color: rgb(250, 235, 235);
+  border: solid 0.2rem red;
+  border-radius: 30px;
+  max-width: 400px;
+  width: auto;
+  margin: auto;
+}
+
+.badgeKo p{
+  margin-bottom: 0rem;
+  color: rgb(226, 0, 102);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+

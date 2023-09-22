@@ -6,9 +6,41 @@ import Contact from '@/Components/Contact/Contact.js'
 import Thanks from '@/Components/Thanks/Thanks.js'
 
 
+///////////////////////////////////////////
+//// ----------- SERVER CONNECTION
+//////////////////////////////////////////
+
+export let serverUrl;
+const serverPort = 9000;  // Cuse the same port of the server
+const serverPath = '/project-marriage-ste' // place here your project path
+const serverAdress = 'https://server-piqus.vercel.app';
+const serverLive = `${serverAdress}${serverPath}`;
+const serverLocal = `http://localhost:${serverPort}${serverPath}`
+
+const  appEnv = process.env.NODE_ENV || 'development';
+const serverUrlbuilder = () => {
+  if(appEnv === 'development' ){
+    serverUrl = serverLocal
+  }else{
+    serverUrl = serverLive
+  }
+};
+
+serverUrlbuilder();
+
+// ////////////////////// end server////////////////
+
+
+
+////////////////////////////////////////////////////
+/////----------- WEB APP 
+//////////////////////////////////////////////////
+
+console.log('APP START: running on server: 3000');
 
 export default function Home() {
   return (
+
     <>
       <Head>
         <title>Ramona e Stefano si sposano</title>
@@ -20,7 +52,7 @@ export default function Home() {
       <Cover />
       <Date />
       <Location />
-      <Contact />
+      <Contact serverUrl = { serverUrl}/>
       <Thanks />
     </>
   )
