@@ -1,4 +1,5 @@
 import React from "react";
+const _ = require('lodash');
 import { useState } from 'react';
 import styles from '@/Components/Contact/Contact.module.css'
 
@@ -23,11 +24,11 @@ const Contact = ({ serverUrl }) => {
   // STATUS UPDATE - data from form input
 
   const handleFormName = (e) => {
-    setFormData({...formData, name: e.target.value});
+    setFormData({...formData, name: _.capitalize(e.target.value)});
   }
 
   const handleFormLastName = (e) => {
-    setFormData({...formData, lastName: e.target.value});
+    setFormData({...formData, lastName: _.capitalize(e.target.value)});
   }
 
   const handleGuest = (e) => {
@@ -56,6 +57,7 @@ const Contact = ({ serverUrl }) => {
 //////////////////////////
 // EMAIL - sending data to server
  const emailSending = () => {
+
 
   console.log(serverUrl)
   fetch(`${serverUrl}/send-email`,   {
