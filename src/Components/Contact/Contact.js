@@ -99,8 +99,8 @@ const Contact = ({ serverUrl }) => {
 
         <div className={styles.formContainer}>
           <form action="/action_page.php">
-            <label htmlFor="fname">Nome</label>
-            <input type="text" id="fname" name="firstname" className={styles.inputField} placeholder="Inserisci il tuo nome" onChange={ handleFormName }/>
+            <label htmlFor="fname">Nome e Cognome</label>
+            <input type="text" id="fname" name="firstname" className={styles.inputField} placeholder="Il tuo nome e cognome" onChange={ handleFormName }/>
             <label htmlFor="lname">Cognome</label>
             <input type="text" id="lname" name="lastname" className={styles.inputField} placeholder="Inserisci il tuo cognome" onChange={ handleFormLastName } />
             <label htmlFor="country">Accompagnatori</label>

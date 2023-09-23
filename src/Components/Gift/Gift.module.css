@@ -1,0 +1,83 @@
+.gift{
+  padding: 4rem 1rem;
+  width: 100%;
+}
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contentContainer{
+  padding: 2rem 2rem;
+  text-align: center;
+  width: 50%;
+}
+
+.contentContainer p{
+  font-size: 0.9rem;
+}
+
+.imageContainer{
+  background-image: url(/img/moon.jpg);
+  background-position: center;
+  background-size: cover;
+  height:400px;
+  width: 50%;
+  border-radius: 300px;
+  margin: 2rem;
+
+}
+
+.iban{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(229, 229, 229);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.iban p{
+  margin: 0;
+  margin-right: 2rem;
+}
+
+.iban img{
+  position: relative;
+  top: -2px;
+}
+
+
+/* //////// mobile ///////// */
+@media only screen and (max-width: 750px) {
+  .wrapper{
+    display: block;
+  }
+
+  .contentContainer{
+    padding: 2rem 0rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+
+  .imageMobile{
+    /* display: inline-block; */
+    background-image: url(/img/moon.jpg);
+    background-position: center;
+    background-size: cover;
+    height:150px;
+    width: 100%;
+    border-radius: 300px;
+    margin: 2rem auto;
+
+  }
+
+  .imageContainer{
+    display: none;
+  }
+
+}
+

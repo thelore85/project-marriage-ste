@@ -99,13 +99,24 @@ h3,h4,h5{
   width: 100%;
   border: solid 0.2rem;
   border-color: var(--on-primary);
-  background: rgba(255, 255, 255, 0);;
+  background-color: rgba(255, 255, 255, 0);
   font-size: 0.7rem;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   color: var(--on-primary);
   cursor: pointer;
+  text-decoration: none;
+}
+
+
+.button:hover{
+  /* text-decoration: underline; */
+  background-color: rgba(62, 62, 62, 0.089);
+}
+
+.button:active{
+  background-color: rgba(62, 62, 62, 0.3);
 }
 
 
@@ -115,13 +126,23 @@ h3,h4,h5{
   width: 100%;
   border: solid 0.2rem;
   border-color: var(--white);
-  background: rgba(255, 255, 255, 0);;
+  background-color: rgba(255, 255, 255, 0);
   font-size: 0.7rem;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
   cursor: pointer;
+  text-decoration: none;
+}
+
+.button-white:hover{
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+
+.button-white:active{
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 

@@ -9,9 +9,9 @@ const Thanks = () => {
 
         <div className={styles.greetingsContainer} >
 
-          <div className={styles.firmaContrainer}>
+          <div className={styles.firmaContainer}>
             <div className={styles.title}>
-              <h1>Ti aspettiamo</h1>
+              <h2>Ti aspettiamo</h2>
               <div className='divider'></div>
               <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
               <div className='divider'></div>

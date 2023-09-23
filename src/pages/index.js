@@ -4,6 +4,7 @@ import Date from '@/Components/Date/Date.js'
 import Location from '@/Components/Location/Location.js'
 import Contact from '@/Components/Contact/Contact.js'
 import Thanks from '@/Components/Thanks/Thanks.js'
+import Gift from '@/Components/Gift/Gift.js'
 
 
 ///////////////////////////////////////////
@@ -53,6 +54,7 @@ export default function Home() {
       <Date />
       <Location />
       <Contact serverUrl = { serverUrl}/>
+      <Gift />
       <Thanks />
     </>
   )
