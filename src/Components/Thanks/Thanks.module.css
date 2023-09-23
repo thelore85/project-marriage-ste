@@ -2,16 +2,15 @@
 .thanks {
   position: relative;
   z-index: 0;
-
   display: flex;
   align-items: center;
 
 
-  padding: 2rem 2rem;
+  padding: 4rem 2rem;
   background-image: url("/img/flower-bg.jpg");
   background-size: cover;
   width: 100%;
-  height: 70vh;
+
   color: var(--on-primary)
 }
 
@@ -26,11 +25,9 @@
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)); /* Gradiente bianco con opacità */
   z-index: -1; /* Porta l'immagine di sfondo al di sotto del contenuto */
 }
-
-
 .wrapper{
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   text-align: center;
   margin: auto;
 }
@@ -40,11 +37,31 @@
   line-height: 5rem;
 }
 
+.greetingsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.subtitle{
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.subtitle h3{
+  font-size: 1.2rem;
+}
 
 /* //////// mobile ///////// */
 @media only screen and (max-width: 750px) {
   .firma h2{
     font-size: 5rem;
     line-height: 4rem;
+  }
+
+  .greetingsContainer{
+    display: block;
+
   }
 }

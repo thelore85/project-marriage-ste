@@ -31,42 +31,22 @@ const Messages = () => {
 
   return (
     <section id="messages" className={styles.messages}>
-      <div className={styles.wrapper}>
-        <div>
-          <h3>Lascia un messaggio di auguri!</h3>
-          <div className="divider"></div>
-        </div>
+
 
         <div className={styles.containerMessages}>
           <ul>
             {messages.map((el) => {
-
-              //set de date format
               const messageDate = new Date(el.date);
               const formattedDate = `${messageDate.getDate()}-${messageDate.getMonth()+1}-${messageDate.getFullYear()}`;
-            
-              return (
-                <li key={el.id}>
-                  <p>{el.message}</p>
-                  <p className={styles.date}>{formattedDate}</p>
-                </li>
-              );
-            })}
+              return (<li key={el.id}> <p>{el.message}</p> <p className={styles.date}>{formattedDate}</p> </li> );  })}
           </ul>
         </div>
 
         <div className={styles.messageInput}>
-          <input
-            type="text"
-            value={inputText}
-            onChange={handleInputChange}
-            placeholder="Scrivi il tuo messaggio..."
-          />
-          <div className={styles.icon} onClick={handleSendMessage}>
-            <span>{'>'}</span>
-          </div>
+          <input type="text" value={inputText} onChange={handleInputChange} placeholder="Scrivi il tuo messaggio..." />
+          <div className={styles.icon} onClick={handleSendMessage}> <span>{'>'}</span> </div>
         </div>
-      </div>
+
     </section>
   );
 };
