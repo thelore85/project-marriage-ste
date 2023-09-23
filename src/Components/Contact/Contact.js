@@ -64,8 +64,6 @@ const Contact = ({ serverUrl }) => {
 // EMAIL - sending data to server
  const emailSending = () => {
 
-
-  console.log(serverUrl)
   fetch(`${serverUrl}/send-email`,   {
     method: 'post',
     headers: {'Content-Type' : 'application/json'},
@@ -80,16 +78,11 @@ const Contact = ({ serverUrl }) => {
     })
   .then(response => {
     if(response.status === 200){ 
-      console.log('server status', response.status)
       showEmailConfirmationPopUp(true)
     }else{
-      console.log('server status', response.status)
       showEmailConfirmationPopUp(false)
     }
     return response.json()
-  })
-  .then(message => {
-    console.log('Email delivery: ', message)
   })
 }
 

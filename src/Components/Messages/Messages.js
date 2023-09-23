@@ -1,44 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "@/Components/Messages/Messages.module.css";
-import { messages } from "@/Asset/dbMessages.js";
 
-const Messages = () => {
+const Messages = ({ serverUrl }) => {
 
   const [inputText, setInputText] = useState("");
+  const [ printMessage, setPrintMessage ] = useState([]);
 
-  const handleInputChange = (e) => {
-    setInputText(e.target.value);
-  };
+  useEffect(() => {
+    loadDb();
+  }, []);
 
-
+  const loadDb = () => {
+    fetch(`${serverUrl}/get-messages`)
+    .then(res => res.json())
+    .then(res => setPrintMessage(res))
+  }
+  
   const handleSendMessage = () => {
 
     if (inputText.trim() !== "") { //check input is not empty
-      const newMessage = {
-        id: messages.length + 1,
-        message: inputText,
-        date: new Date(),
-        userType: 'guest',
-      };
 
-      // Aggiungi il nuovo messaggio all'array 'messages' nel tuo database
-      messages.push(newMessage);
+      // fetch the server call
+      fetch(`${serverUrl}/push-message`,   {
+        method: 'post',
+        headers: {'Content-Type' : 'application/json'},
+        body: JSON.stringify({
+          testo: inputText,
+          data: new Date(),
+          user_type: 'guest'
+        })
+      })
+      .then(res => res.json())
+      .then(res => setPrintMessage([...printMessage, res[0]]))
 
       // clear input
       setInputText("");
     }
   };
 
+  const handleInputChange = (e) => {
+    setInputText(e.target.value);
+  };
+
+
   return (
     <section id="messages" className={styles.messages}>
 
-
         <div className={styles.containerMessages}>
           <ul>
-            {messages.map((el) => {
-              const messageDate = new Date(el.date);
+            {printMessage.map((el) => {
+              const messageDate = new Date(el.data);
               const formattedDate = `${messageDate.getDate()}-${messageDate.getMonth()+1}-${messageDate.getFullYear()}`;
-              return (<li key={el.id}> <p>{el.message}</p> <p className={styles.date}>{formattedDate}</p> </li> );  })}
+              return (<li key={el.id}> <p>{el.testo}</p> <p className={styles.date}>{formattedDate}</p> </li> );  })}
           </ul>
         </div>
 

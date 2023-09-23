@@ -2,7 +2,7 @@ import React from "react";
 import Messages from '@/Components/Messages/Messages.js'
 import styles from '@/Components/Thanks/Thanks.module.css'
 
-const Thanks = () => {
+const Thanks = ({ serverUrl }) => {
   return(
     <section id="thanks" className={styles.thanks}>
       <div className={styles.wrapper}>
@@ -25,7 +25,7 @@ const Thanks = () => {
             <div className={styles.subtitle}>
               <h3>Lasciaci un messaggio di auguri!</h3>
             </div>
-            <Messages />
+            <Messages serverUrl = { serverUrl} />
           </div>
 
         </div>
