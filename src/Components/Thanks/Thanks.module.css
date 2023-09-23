@@ -4,8 +4,6 @@
   z-index: 0;
   display: flex;
   align-items: center;
-
-
   padding: 4rem 2rem;
   background-image: url("/img/flower-bg.jpg");
   background-size: cover;
@@ -32,16 +30,20 @@
   margin: auto;
 }
 
-.firma h2{
-  font-size: 6rem;
-  line-height: 5rem;
-}
-
 .greetingsContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.containerMessages{
+  padding: 1rem;
+}
+
+.firma h2{
+  font-size: 6rem;
+  line-height: 5rem;
 }
 
 .subtitle{
@@ -61,7 +63,10 @@
   }
 
   .greetingsContainer{
-    display: block;
+    display: block
+  }
 
+  .containerMessages{
+    padding: 1rem 0rem;
   }
 }

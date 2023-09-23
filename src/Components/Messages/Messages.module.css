@@ -1,7 +1,7 @@
 .messages{
   width: 100%;
   text-align: center;
-  padding: 0rem 2rem;
+  padding: 0;
   margin-bottom: 2rem;
   color: var(--on-primary)
 }

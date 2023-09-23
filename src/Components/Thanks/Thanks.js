@@ -21,7 +21,7 @@ const Thanks = () => {
             </div>
           </div>
 
-          <div className={styles.messagesContaner}>
+          <div className={styles.containerMessages}>
             <div className={styles.subtitle}>
               <h3>Lasciaci un messaggio di auguri!</h3>
             </div>
