@@ -15,6 +15,7 @@ const Contact = ({ serverUrl }) => {
     guest: 0,
     phone: '',
     email: '',
+    note: '',
   });
 
   const [ emailStatus, setEmailStatus ] = useState('pending')
@@ -43,6 +44,11 @@ const Contact = ({ serverUrl }) => {
     setFormData({...formData, email: e.target.value});
   }
 
+  const handleNote = (e) => {
+    setFormData({...formData, note: e.target.value});
+  }
+
+
 
   const showEmailConfirmationPopUp = (status) => { 
     if(status === true){ setEmailStatus(true)}
@@ -69,6 +75,7 @@ const Contact = ({ serverUrl }) => {
       guest: formData.guest,
       phone: formData.phone,
       email: formData.email,
+      note: formData.note,
      })
     })
   .then(response => {
@@ -101,14 +108,14 @@ const Contact = ({ serverUrl }) => {
           <form action="/action_page.php">
             <label htmlFor="fname">Nome e Cognome</label>
             <input type="text" id="fname" name="firstname" className={styles.inputField} placeholder="Il tuo nome e cognome" onChange={ handleFormName }/>
-            <label htmlFor="lname">Cognome</label>
-            <input type="text" id="lname" name="lastname" className={styles.inputField} placeholder="Inserisci il tuo cognome" onChange={ handleFormLastName } />
-            <label htmlFor="country">Accompagnatori</label>
-            <input type="number" id="accompagnatori" name="accompagnatori" className={styles.inputField} placeholder="Con quante persone verrari? (numero)" min="0" max="10" onChange={handleGuest} />
-            <label htmlFor="fname">Cellulare</label>
-            <input type="tel" id="lname" name="lastname" className={styles.inputField} placeholder="Numero di cellulare" onChange={handlePhone}/>
-            <label htmlFor="fname">Email</label>
-            <input type="email" id="lname" name="lastname" className={styles.inputField} placeholder="email" onChange={handleEmail}/>
+            <label htmlFor="guest">Accompagnatori</label>
+            <input type="number" id="guest" name="guest" className={styles.inputField} placeholder="Con quante persone verrari? (numero)" min="0" max="10" onChange={handleGuest} />
+            <label htmlFor="phone">Cellulare</label>
+            <input type="tel" id="phone" name="phone" className={styles.inputField} placeholder="Numero di cellulare" onChange={handlePhone}/>
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" className={styles.inputField} placeholder="email" onChange={handleEmail}/>
+            <label htmlFor="note">Note o Intolleranze</label>
+            <textarea id="note" name="note" rows="4" cols="40" className={styles.inputField} placeholder="segnalaci qualsiasi necessita'" onChange={handleNote}/>
             <p>Useremo il tuo contatto solo in caso di comunicazioni importanti relative al programma dell'evento.</p>
 
             <a className='button-white' onClick={emailSending} >invia conferma</a>
