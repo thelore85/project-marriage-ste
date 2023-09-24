@@ -99,7 +99,7 @@ const Contact = ({ serverUrl }) => {
 
         <div className={styles.formContainer}>
           
-          <p>E' gradita la vostra conferma entro il 31 Giugno!</p>
+          <p className={styles.advise}>E' gradita la vostra conferma entro il 31 Giugno!</p>
 
           <form action="/action_page.php">
             <label htmlFor="fname">Nome e Cognome</label>

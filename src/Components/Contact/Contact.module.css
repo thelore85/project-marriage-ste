@@ -20,6 +20,11 @@
   border: solid white 0.7rem;
 }
 
+.advise{
+  font-size: 1rem;
+  text-align: center;
+}
+
 .formContainer p{
   font-size: 0.7rem;
   line-height: 1rem;
