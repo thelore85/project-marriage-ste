@@ -75,24 +75,30 @@ where
 /* //////// mobile ///////// */
 @media only screen and (max-width: 750px) {
 
+  .infoCard{
+    display: block;
+  }
+
+  .imageHeader{
+    margin-bottom: 1rem;
+  }
+
   .headerImgRic{
     display: inline-block;
     height: 160px;
     background-image: url("/img/ric-loc.jpeg");
     background-position: center;
     background-size: cover;
-    /* border-radius: 8px; */
-    width: 50%;
+    width: 100%;
   }
 
   .headerImgChiesa{
-    display: inline-block;
+    display: block;
     height: 160px;
     background-image: url("/img/chiesa-loc.png");
     background-size: cover;
     background-position: center;
-    /* border-radius: 8px; */
-    width: 50%;
+    width: 100%;
   }
 
   .locationImgRic{ display: none; }

@@ -12,7 +12,6 @@ HERO SECTION
   min-height: 100vh;
   background-color: white;
   background-image: var(--background-image);
-  background-position:center;
   background-size: cover;
   padding: 2rem;
 }

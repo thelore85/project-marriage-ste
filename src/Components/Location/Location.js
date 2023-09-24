@@ -22,12 +22,11 @@ const Location = () => {
 
       <div className={styles.cardWrapper}>
 
-        <div className={styles.imageHeader}>
-          <div className={styles.headerImgRic}></div>
-          <div className={styles.headerImgChiesa}></div>    
-        </div>
-
         <div className={styles.infoCard}>
+          <div className={styles.imageHeader}>
+            <div className={styles.headerImgChiesa}></div>    
+          </div>
+
           <div className={styles.info}>
             <h3><b>La Cerimonia</b></h3>
             <p><b>Parrocchia S. Giovanni Battista</b></p>
@@ -42,9 +41,14 @@ const Location = () => {
         </div>
 
         <div className='divider'></div>
+        
 
         <div className={styles.infoCard}>
-          <div className={styles.locationImgRic}></div>    
+          <div className={styles.locationImgRic}></div>  
+
+          <div className={styles.imageHeader}>
+            <div className={styles.headerImgRic}></div>  
+          </div>
          
           <div className={styles.info}>
             <h3><b>Il ricevimento</b></h3>
