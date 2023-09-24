@@ -78,7 +78,7 @@ where
   .headerImgRic{
     display: inline-block;
     height: 160px;
-    background-image: url("/img/ric-loc.jpg");
+    background-image: url("/img/ric-loc.jpeg");
     background-position: center;
     background-size: cover;
     /* border-radius: 8px; */
