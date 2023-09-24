@@ -32,12 +32,12 @@ WHEN SECTION
 }
 
 .date .month{
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 .date .day{
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 5rem;
+  line-height: 4.2rem;
 }
 .date .year{
   font-size: 2rem;

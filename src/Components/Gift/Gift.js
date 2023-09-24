@@ -18,7 +18,7 @@ const Gift = () => {
           <div className={styles.imageMobile}></div>
        
           <div className={styles.ibanContainer}>
-            <p>Puoi mandarci il tuo contributo ai seguenti recapiti bancari:</p>
+            <p>Puoi mandarci il tuo contributo le seguente recapito bancario:</p>
             <div className={styles.iban}>
               <p><b>IBAN</b> <span>IT30I0100501620000000005724</span></p>
               <img className={styles.copyIcon} src="img/copy-icon.png" height='25px'/>
