@@ -51,7 +51,7 @@ where
 .locationImgRic{
   min-height: 250px;
   height: 100%;
-  background-image: url("/img/ric-loc.jpg");
+  background-image: url("/img/ric-loc.jpeg");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
