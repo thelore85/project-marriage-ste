@@ -41,7 +41,7 @@ where
 .locationImgChiesa{
   min-height: 250px;
   height: 100%;
-  background-image: url("/img/chiesa-loc.png");
+  background-image: url("/img/chiesa-loc.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
