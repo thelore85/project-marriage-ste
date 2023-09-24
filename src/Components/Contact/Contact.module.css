@@ -20,9 +20,11 @@
   border: solid white 0.7rem;
 }
 
-p .advise{
-  font-size: 1rem;
-  text-align: center;
+.formContainer .advise{
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .formContainer p{
