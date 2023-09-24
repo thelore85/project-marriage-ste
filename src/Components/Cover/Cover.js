@@ -32,7 +32,7 @@ const Cover = () => {
               Parrocchia S. Giovanni Battista</p>
         </div> */}
 
-        <a href="#when" className='button'>Data e Luogo</a>
+        <a href="#contact" className='button'>Conferma la partecipazione</a>
       </div>
 
     </div>
