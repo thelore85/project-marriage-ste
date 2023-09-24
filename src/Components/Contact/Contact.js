@@ -98,6 +98,9 @@ const Contact = ({ serverUrl }) => {
         </div>
 
         <div className={styles.formContainer}>
+          
+          <p>E' gradita la vostra conferma entro il 31 Giugno!</p>
+
           <form action="/action_page.php">
             <label htmlFor="fname">Nome e Cognome</label>
             <input type="text" id="fname" name="firstname" className={styles.inputField} placeholder="Il tuo nome e cognome" onChange={ handleFormName }/>
