@@ -76,6 +76,7 @@ HERO SECTION
  /*//////////  mobile ////////////*/
 
 @media only screen and (max-width: 700px) {
+
   .coverCard{
     display: block;
     border: solid 0.6rem white;
