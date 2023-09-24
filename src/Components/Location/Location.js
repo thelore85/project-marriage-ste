@@ -48,7 +48,7 @@ const Location = () => {
          
           <div className={styles.info}>
             <h3><b>Il ricevimento</b></h3>
-            <p><b>Galbusera Nera</b></p>
+            <p><b>La Costa - Galbusera Nera</b></p>
             <p><b>Ore 17.30</b><br /> Via Galbusera Nera, 23888 <br/>
             La Valletta Brianza - Lecco<br />
             </p>
@@ -58,9 +58,9 @@ const Location = () => {
 
       </div>
       <div className={styles.buttonContainer}>
-          <div className='divider'></div>
-          <a href="#contact" className='button'>Conferma la partecipazione</a>
-        </div>
+        <div className='divider'></div>
+        <a href="#contact" className='button'>Conferma la partecipazione</a>
+      </div>
 
     </section>
 

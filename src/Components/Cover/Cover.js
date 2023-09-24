@@ -24,14 +24,6 @@ const Cover = () => {
         <div className='divider'></div>
         <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
         <div className='divider'></div>
-      
-        {/* <div className={styles.coverInfoDetails}>           
-          <p> 14 settembre 2024<br />
-              Milano - Trenno<br />
-              Piazza S. Giovanni, 4, 20151<br />
-              Parrocchia S. Giovanni Battista</p>
-        </div> */}
-
         <a href="#contact" className='button'>Conferma la partecipazione</a>
       </div>
 

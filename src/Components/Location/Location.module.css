@@ -14,7 +14,7 @@ where
 
 .cardWrapper{
   border: solid 3rem;
-  border-color: var(--secondary);
+  border-color: var(--terciary);
   margin: auto;
   width: 100%;
   max-width: 1000px;
@@ -78,7 +78,7 @@ where
   .headerImgRic{
     display: inline-block;
     height: 160px;
-    background-image: url("/img/ric-loc.png");
+    background-image: url("/img/ric-loc.jpg");
     background-position: center;
     background-size: cover;
     /* border-radius: 8px; */
