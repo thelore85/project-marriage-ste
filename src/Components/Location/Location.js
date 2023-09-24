@@ -31,7 +31,7 @@ const Location = () => {
           <div className={styles.info}>
             <h3><b>La Cerimonia</b></h3>
             <p><b>Parrocchia S. Giovanni Battista</b></p>
-            <p><b>Ore 10.00</b><br />
+            <p><b>Ore 15.00</b><br />
             Piazza S. Giovanni, 4 <br />
             20151 Milano - MI<br />
             </p>
@@ -49,16 +49,14 @@ const Location = () => {
           <div className={styles.info}>
             <h3><b>Il ricevimento</b></h3>
             <p><b>Galbusera Nera</b></p>
-            <p><b>h 14.30</b><br /> Via Galbusera Nera, 23888 <br/>
+            <p><b>h 17.30</b><br /> Via Galbusera Nera, 23888 <br/>
             La Valletta Brianza - Lecco<br />
             </p>
             <a className="button" href='https://maps.app.goo.gl/Vv8EyhzBuNKFeZ4k6' target="_blank">Apri la mappa</a>
           </div>
-
         </div>
 
         
-
       </div>
 
     </section>
