@@ -32,10 +32,15 @@
 
 }
 
+.copyButtonContainer{
+  margin: 0;
+}
+
 .iban{
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  align-items: center;
+  padding: 0.5rem;
   background-color: rgb(229, 229, 229);
   border-radius: 5px;
   margin-bottom: 2rem;
@@ -45,9 +50,13 @@
   margin-right: 2rem;
 }
 
-.iban img{
-  position: relative;
-  top: -2px;
+.copyIconOk{
+  font-family: 'Poppins';
+  padding: 0.35rem;
+  background-color: rgb(205, 241, 205);
+  border-radius: 10px;
+  font-weight: 400;
+  color: var(--on-primary);
 }
 
 

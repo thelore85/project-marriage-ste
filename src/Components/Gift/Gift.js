@@ -1,7 +1,42 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
+import ClipboardJS from 'clipboard';
 import styles from '@/Components/Gift/Gift.module.css';
 
 const Gift = () => {
+
+  const [ textCopyStatus, setTestCopyStatus ] = useState(false)
+
+  const textToCopyRef = useRef(null);
+  const copyButtonRef = useRef(null);
+
+
+  const memorizzaTesto = () => {
+
+    const textToCopy = textToCopyRef.current.innerText;
+
+    const clipboard = new ClipboardJS(copyButtonRef.current, {
+      text: function () {
+        return textToCopy;
+      },
+    });
+
+    clipboard.on('success', function (e) {
+      e.clearSelection();
+      setTestCopyStatus(true)
+    });
+
+    clipboard.on('error', function (e) {
+      console.error('Errore durante la copia del testo: ', e);
+    });
+
+    // Simula un clic sul pulsante di copia
+    if (copyButtonRef.current) {
+      copyButtonRef.current.click();
+    }
+  };
+
+
+
   return(
     <section id='gift' className={styles.gift}>
       <div className={styles.wrapper}>
@@ -19,9 +54,19 @@ const Gift = () => {
        
           <div className={styles.ibanContainer}>
             <p>Puoi mandarci il tuo contributo al seguente recapito bancario:</p>
+
             <div className={styles.iban}>
-              <p><b>IBAN</b> <span>IT30I0100501620000000005724</span></p>
-              <img className={styles.copyIcon} src="img/copy-icon.png" height='25px'/>
+
+              <div>
+                <p><b>IBAN</b> <span ref={textToCopyRef} >IT30I0100501620000000005724</span></p>
+              </div>
+
+              <div className={ styles.copyButtonContainer}>
+                { textCopyStatus ? <span className={styles.copyIconOk}> OK!</span>
+                    : <img ref={copyButtonRef} onClick={memorizzaTesto} className={styles.copyIcon} src="img/copy-icon.png" height='25px'/>
+                }
+              </div>
+
             </div>
             <p>Nella causale non dimenticarti di inserire il tuo nome cosi possiamo ringraziarti!</p>
           </div>
