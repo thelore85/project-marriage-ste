@@ -37,6 +37,12 @@ where
   width: 45%;
 }
 
+.buttonContainer{
+  margin: auto;
+  max-width: 400px;
+  padding: 2rem;
+}
+
 /* //images */
 .locationImgChiesa{
   min-height: 250px;

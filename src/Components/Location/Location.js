@@ -55,9 +55,12 @@ const Location = () => {
             <a className="button" href='https://maps.app.goo.gl/Vv8EyhzBuNKFeZ4k6' target="_blank">Apri la mappa</a>
           </div>
         </div>
-        <a href="#contact" className='button'>Conferma la partecipazione</a>
 
       </div>
+      <div className={styles.buttonContainer}>
+          <div className='divider'></div>
+          <a href="#contact" className='button'>Conferma la partecipazione</a>
+        </div>
 
     </section>
 
