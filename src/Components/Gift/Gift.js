@@ -53,12 +53,12 @@ const Gift = () => {
           <div className={styles.imageMobile}></div>
        
           <div className={styles.ibanContainer}>
-            <p>Puoi mandarci il tuo contributo al seguente recapito bancario:</p>
+            <p>Puoi mandarci il tuo contributo al seguente <b>Iban</b> bancario:</p>
 
             <div className={styles.iban}>
 
               <div>
-                <p><b>IBAN</b> <span ref={textToCopyRef} >IT30I0100501620000000005724</span></p>
+                <p> <span ref={textToCopyRef} >IT30I0100501620000000005724</span></p>
               </div>
 
               <div className={ styles.copyButtonContainer}>

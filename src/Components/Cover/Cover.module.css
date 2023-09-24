@@ -13,7 +13,7 @@ HERO SECTION
   background-color: white;
   background-image: var(--background-image);
   background-size: cover;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* Aggiungi uno pseudo-elemento ::before */

@@ -5,9 +5,9 @@
   background-color: var(--quart);
   color: var(--white);
   font-family: 'Poppins';
+  padding: 6rem 1rem;
 }
 .wrapper {
-  padding: 6rem 2rem;
   text-align: center;
 }
 

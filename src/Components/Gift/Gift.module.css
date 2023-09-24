@@ -32,10 +32,6 @@
 
 }
 
-.copyButtonContainer{
-  margin: 0;
-}
-
 .iban{
   display: flex;
   justify-content: center;
@@ -45,9 +41,14 @@
   border-radius: 5px;
   margin-bottom: 2rem;
 }
+
 .iban p{
   margin: 0;
-  margin-right: 2rem;
+  margin-right: 1rem;
+}
+
+.copyButtonContainer{
+  margin: 0;
 }
 
 .copyIconOk{
@@ -71,7 +72,6 @@
     text-align: center;
     width: 100%;
   }
-  
 
   .imageMobile{
     /* display: inline-block; */
@@ -88,6 +88,15 @@
   .imageContainer{
     display: none;
   }
+
+  .iban p{
+    font-size: 0.8rem;
+  }
+
+  .hide{
+    display: none;
+  }
+  
 
 }
 
