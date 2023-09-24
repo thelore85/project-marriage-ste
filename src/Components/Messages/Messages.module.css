@@ -31,7 +31,7 @@
 .containerMessages li{
   text-align: left;
   font-style: none;
-  background-color: rgb(0, 116, 165);
+  background-color: rgb(52, 151, 194);
   color: white;
   padding: 0.6rem;
   border-radius: 15px 15px 15px 0px;
@@ -74,7 +74,7 @@
 .icon{ 
   display: inline-block;
   width: 20%;
-  background: rgb(0, 116, 165);
+  background:rgb(52, 151, 194);
   color: white;
   height: 40px;
   border: none;
