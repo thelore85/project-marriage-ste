@@ -1,7 +1,5 @@
-
 import React from "react"
 import styles from '@/Components/Cover/Cover.module.css'
-
 
 const Cover = () => {
   return(
@@ -22,19 +20,19 @@ const Cover = () => {
 
       <div className={styles.coverInfo}>
 
-        <h3> Sei invitato al nostro matrimonio!</h3>
+        <h3>Siamo felici di invitarti al nostro matrimonio!</h3>
         <div className='divider'></div>
         <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
         <div className='divider'></div>
       
-        <div className={styles.coverInfoDetails}>           
+        {/* <div className={styles.coverInfoDetails}>           
           <p> 14 settembre 2024<br />
               Milano - Trenno<br />
               Piazza S. Giovanni, 4, 20151<br />
               Parrocchia S. Giovanni Battista</p>
-        </div>
+        </div> */}
 
-        <a href="#contact" className='button'>conferma la presenza</a>
+        <a href="#when" className='button'>Data e Luogo</a>
       </div>
 
     </div>
