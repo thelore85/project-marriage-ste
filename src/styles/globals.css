@@ -3,15 +3,18 @@
 :root {
   --primary:  rgba(245, 238, 185, 0.664);
   --secondary:  #ffebe8ca;
-  --terciary: #f2d6d4eb;
+  /* --terciary: #f2d6d4eb; */
+  --terciary: #b56644ca;
   --quart:  #b56644;
   --black: black;
   --white: white;
 
   --on-primary: rgb(88, 70, 60);  
+  /* --on-primary: rgb(88, 70, 60);   */
   --on-quart: rgb(255, 255, 255); 
 
-  --background-image: url(/img/background-cover-v2.jpg);
+  --background-image: url(/img/spicybg.jpeg);
+  /* --background-image: url(/img/background-cover-v2.jpg); */
 
   --max-width: 1100px;
   --border-radius: 12px;

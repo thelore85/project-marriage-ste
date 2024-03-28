@@ -53,9 +53,9 @@ export default function Home() {
       <Cover />
       <Date />
       <Location />
-      <Contact serverUrl = { serverUrl}/>
+      <Contact serverUrl = { serverUrl }/>
       <Gift />
-      <Thanks serverUrl = { serverUrl} />
+      <Thanks serverUrl = { serverUrl } />
     </>
   )
 }

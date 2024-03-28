@@ -14,7 +14,7 @@ where
 
 .cardWrapper{
   border: solid 3rem;
-  border-color: var(--terciary);
+  border-color: var(--quart);
   margin: auto;
   width: 100%;
   max-width: 1000px;
@@ -47,7 +47,7 @@ where
 .locationImgChiesa{
   min-height: 250px;
   height: 100%;
-  background-image: url("/img/chiesa-loc.png");
+  background-image: url("/img/chiesa.jpeg");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -95,7 +95,7 @@ where
   .headerImgChiesa{
     display: block;
     height: 160px;
-    background-image: url("/img/chiesa-loc.png");
+    background-image: url("/img/chiesa.jpeg");
     background-size: cover;
     background-position: center;
     width: 100%;

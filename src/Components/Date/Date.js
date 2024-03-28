@@ -26,7 +26,7 @@ const Date = () => {
       </div>
 
       <div className={styles.aforismo}>
-        <p>"La vita non avrebbe senso senza l’amore che ci unisce."</p>
+        <p>"Il matrimonio è un lavoro artigianale"</p>
       </div>
 
       <a className="button" href='#location'>Scopri Come Raggiungerci</a>

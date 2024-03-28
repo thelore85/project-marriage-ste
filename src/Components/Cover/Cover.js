@@ -24,7 +24,7 @@ const Cover = () => {
         <div className='divider'></div>
         <img className="logo" src="img/ramona-stefano-dark.png" height='20px'/>
         <div className='divider'></div>
-        <a href="#contact" className='button'>Conferma la partecipazione</a>
+        <a href="#contact" className='button-white'>Conferma la partecipazione</a>
       </div>
 
     </div>

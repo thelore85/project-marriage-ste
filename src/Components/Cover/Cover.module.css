@@ -50,7 +50,7 @@ HERO SECTION
   border: solid 0.5rem;
   border-color: rgba(255, 255, 255, 0.531);
 
-  color: var(--on-primary);
+  color: var(--on-quart);
   text-align: center;
   width: 35%;
 }
@@ -65,7 +65,7 @@ HERO SECTION
   padding: 2rem;
   color: white;
   background-color: rgba(255, 255, 255, 0.255);
-  background-image: url(/img/ramona-stefano-col.jpg);
+  background-image: url(/img/copertina.jpeg);
   background-position: center;
   background-size: cover;
   width: 65%;
