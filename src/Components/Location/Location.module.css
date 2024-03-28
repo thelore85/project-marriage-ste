@@ -109,6 +109,6 @@ where
 
   .cardWrapper{
     border: solid 1.5rem;
-    border-color: var(--secondary);
+    border-color: var(--quart);
   }
 }

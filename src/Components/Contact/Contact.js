@@ -103,11 +103,11 @@ const Contact = ({ serverUrl }) => {
 
           <form action="/action_page.php">
             <label htmlFor="fname">Nome e Cognome</label>
-            <input type="text" id="fname" name="firstname" className={styles.inputField} placeholder="Il tuo nome e cognome" onChange={ handleFormName }/>
+            <input type="text" id="fname" name="firstname" className={styles.inputField} placeholder="Nome e cognome" onChange={ handleFormName }/>
             <label htmlFor="guest">Accompagnatori</label>
-            <input type="number" id="guest" name="guest" className={styles.inputField} placeholder="Con quante persone verrari? (numero)" min="0" max="10" onChange={handleGuest} />
+            <input type="number" id="guest" name="guest" className={styles.inputField} placeholder="Numero accompagnatori" min="0" max="10" onChange={handleGuest} />
             <label htmlFor="phone">Cellulare</label>
-            <input type="tel" id="phone" name="phone" className={styles.inputField} placeholder="Numero di cellulare" onChange={handlePhone}/>
+            <input type="tel" id="phone" name="phone" className={styles.inputField} placeholder="Numero cellulare" onChange={handlePhone}/>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" className={styles.inputField} placeholder="email" onChange={handleEmail}/>
             <label htmlFor="note">Note o Intolleranze</label>
